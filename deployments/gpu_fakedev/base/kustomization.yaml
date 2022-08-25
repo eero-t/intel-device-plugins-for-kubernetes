@@ -1,0 +1,6 @@
+configMapGenerator:
+- name: fakedev-config
+  files:
+  - fakedev-config.json
+resources:
+  - intel-gpu-plugin.yaml
