@@ -3,7 +3,7 @@ module github.com/intel/intel-device-plugins-for-kubernetes
 go 1.18
 
 require (
-	github.com/fsnotify/fsnotify v1.5.4
+	github.com/fsnotify/fsnotify v1.6.0
 	github.com/go-ini/ini v1.67.0
 	github.com/go-logr/logr v1.2.3
 	github.com/google/go-cmp v0.5.9
@@ -12,7 +12,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.2.0
 	github.com/onsi/gomega v1.20.2
 	github.com/pkg/errors v0.9.1
-	golang.org/x/sys v0.0.0-20220808155132-1c4a2a72c664
+	golang.org/x/sys v0.0.0-20220908164124-27713097b956
 	golang.org/x/text v0.3.7
 	google.golang.org/grpc v1.49.0
 	k8s.io/api v0.25.2
