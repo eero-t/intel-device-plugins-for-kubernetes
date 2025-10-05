@@ -22,7 +22,7 @@ jobs:
     - name: Run Trivy in fs mode
       # Don't fail in case of vulnerabilities, report them in the next step
       continue-on-error: true
-      uses: aquasecurity/trivy-action@dc5a429b52fcf669ce959baa2c2dd26090d2a6c4 # 0.32.0
+      uses: aquasecurity/trivy-action@b6643a29fecd7f34b3597bc6acb0a98b03d33ff8 # 0.33.1
       with:
         scan-type: fs
         scan-ref: .
@@ -31,6 +31,6 @@ jobs:
         format: sarif
         output: trivy-report.sarif
     - name: Upload sarif report to GitHub Security tab
-      uses: github/codeql-action/upload-sarif@df559355d593797519d70b90fc8edd5db049e7a2 # v3
+      uses: github/codeql-action/upload-sarif@64d10c13136e1c5bce3e5fbde8d4906eeaafc885 # v3
       with:
         sarif_file: trivy-report.sarif
